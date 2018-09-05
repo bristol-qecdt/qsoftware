@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from qiskit_aqua import Operator, run_algorithm
 from qiskit_aqua.input import get_input_instance
 # Defines the dictionary of pauli operations

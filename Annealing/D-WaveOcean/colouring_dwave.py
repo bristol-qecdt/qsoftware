@@ -11,7 +11,6 @@ neighbours = [(0,4),(1,2),(1,3),(1,4)]
 def d2tod1(n, k, K):  
     return n * K + k  
 pallete = {0: 'r', 1: 'c', 2:'m', 3:'y'}
-
 # Function to color the final configuration
 def get_color(n, sol, K): 
     z = d2tod1(n, 0, K) 
@@ -40,7 +39,6 @@ print(qubo)
 
 # Set up the solver
 solver = dwave_qbsolv.QBSolv()
-
 # Solve for the minimum energy configuration
 response = solver.sample(qubo, num_reads=300)
 sol = list(response.samples())
