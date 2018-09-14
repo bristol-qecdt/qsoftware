@@ -23,8 +23,6 @@
 
 %\graphicspath{{./figures/}}
 \hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue}
-\renewcommand{\equationautorefname}{Eq.}
-\renewcommand{\figureautorefname}{Fig.}
  
 %%%%%%%%%%%% LaNgUaGe %%%%%%%%%%%%%%%%%%
 \usepackage{verbatim}
@@ -34,28 +32,19 @@
 
 %%%%%%%%%%%%%% PhYsIcS %%%%%%%%%%%%%%%%%%%%%%%
 
-\renewcommand{\annia}{\hat{a}}
-\renewcommand{\annib}{\hat{b}}
-\renewcommand{\creata}{\hat{a}^\dagger}
-\renewcommand{\creatb}{\hat{b}^\dagger}
-
-\renewcommand{\a}{a^ }
-\renewcommand{\b}{b^ }
-\renewcommand{\adag}{a^\dagger}
-\renewcommand{\bdag}{b^\dagger}
-
 \usepackage{qcircuit}
 
 %%%%%%%%%%%%%%%%%5 TIKZ %%%%%%%%%%%%%%%%%%%%
 
 \usepackage{tikz}
 \usetikzlibrary{positioning,calc}
-
-%\tikzset{>=stealth}
-
-%\newcommand{\tikzmark}[1]{\tikz[baseline,remember picture] \node[anchor=base, #1] (#1) {};}
-%\newcommand{\tikzmark}[3][]{\tikz[overlay,remember picture,baseline] \node [anchor=base,#1](#2) {#3};}
 \newcommand{\tikzmark}[3][]{\tikz[remember picture,baseline] \node [anchor=base,#1](#2) {$#3$};}
+
+%%%%%%%%%%%%%% minted %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{minted}
+\setminted[python]{breaklines}
+
+
 \usetheme{PaloAlto}
 
 \title{Python quantum programming languages}
@@ -73,42 +62,44 @@
 \begin{frame}
 \frametitle{Overview}
 \begin{itemize}
-    \item What is it?
-    \item Why do we care about it?
-    \item What we've been doing
-    \item Outlook
+    \item We'll focus on Python based quantum programming libraries
+    \item We tried to program the common programs (e.g. Grover's algorithm, Shor's algorithm, etc.)
+    \item We tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
+    \item We've written a programming guide -- it's under an internal review
 \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{minted}{python}
+    hello
+    print('test')
+  \end{minted}
 \end{frame}
 
 %slide 3
 \begin{frame}
-\frametitle{Motivation quantum nonlinear optics}
+\frametitle{Short comparison}
 \begin{columns}
-\column{0.5\textwidth}
-    \begin{block}{The good}
-    Spontaneous 
+\column{0.46\textwidth}
+    \begin{block}{What is there}
     \begin{itemize}
-        \item thing 1 
-        \item thing 2 
-    \end{itemize}
-    i don't know
-    \begin{itemize}
-        \item thing1  
-        \item thing 2
+        \item Focussed on quantum circuits
+        \item Apply gates to specific qubits
+        \item Classical control in the same source code
+        \item Python syntax is beginner friendly
+        \item Simulators are available
+        \item Hardware compilers are available
     \end{itemize}
     \end{block}
-%
+    %
 \column{0.5\textwidth}
-    \begin{block}{The bad}
-        Spontaneous 
+    \begin{block}{What is lacking}
         \begin{itemize}
-            \item i 
-            \item d
-        \end{itemize}
-        A
-        \begin{itemize}
-            \item o
-            \item n
+            \item Lack of support for custom unitaries
+            \item Compilers are not highly developed
+            \item Some languages target specific hardware
+            \item Some simulators are cloud based and require accounts
+            \item No real quantum programming contructs (e.g. quantum if etc.)
         \end{itemize}
         \end{block}
 \end{columns}
@@ -128,21 +119,7 @@
     \begin{itemize}
     \item Using th
 \end{itemize}
-        \begin{equation}
-        \hat{U} = \exp[-\frac{i}{\hbar}\left( \tikzmark{P}{P} \int d\omega_1 \int d\omega_2 \tikzmark{f}{f(\omega_1,\omega_2)} \tikzmark{aa}{ \creata_s(\omega_1) \creata_i(\omega_2)} + h.c. \right) ]
-    \end{equation}
 
-    \begin{tikzpicture}[overlay, remember picture, node distance=1cm]
-    
-    \node[red] (power) [below =of P]{Power};
-    \draw[red,->,thick] (power) to [in=-90,out=45] (P);
-    
-    \node[blue,xshift=0cm] (jsa) [below =of f]{JSA};
-    \draw[blue,->,thick] (jsa) to [in=-90,out=135] (f.south);
-    
-    \node[purple] (sigidler) [below =of aa]{Signal \& Idler};
-    \draw[purple,->,thick] (sigidler) to [in=-90,out=45] (aa.south);
-\end{tikzpicture}
 \vspace{10pt} 
 \begin{itemize}
     \item We 
