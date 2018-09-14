@@ -1,0 +1,202 @@
+\documentclass{beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Packages  %%%%%%%%%%%%%
+\usepackage{amsmath} 
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+\usepackage{array}
+  
+\usepackage[sort&compress]{natbib}     % bib
+
+%%%%%%%%% FIGurES %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{subcaption}
+\usepackage{scrextend}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage{hyperref}
+
+\usepackage{multimedia}
+
+%\graphicspath{{./figures/}}
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue}
+\renewcommand{\equationautorefname}{Eq.}
+\renewcommand{\figureautorefname}{Fig.}
+ 
+%%%%%%%%%%%% LaNgUaGe %%%%%%%%%%%%%%%%%%
+\usepackage{verbatim}
+\usepackage{natbib}
+\usepackage{wrapfig}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%% PhYsIcS %%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\annia}{\hat{a}}
+\renewcommand{\annib}{\hat{b}}
+\renewcommand{\creata}{\hat{a}^\dagger}
+\renewcommand{\creatb}{\hat{b}^\dagger}
+
+\renewcommand{\a}{a^ }
+\renewcommand{\b}{b^ }
+\renewcommand{\adag}{a^\dagger}
+\renewcommand{\bdag}{b^\dagger}
+
+\usepackage{qcircuit}
+
+%%%%%%%%%%%%%%%%%5 TIKZ %%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+
+%\tikzset{>=stealth}
+
+%\newcommand{\tikzmark}[1]{\tikz[baseline,remember picture] \node[anchor=base, #1] (#1) {};}
+%\newcommand{\tikzmark}[3][]{\tikz[overlay,remember picture,baseline] \node [anchor=base,#1](#2) {#3};}
+\newcommand{\tikzmark}[3][]{\tikz[remember picture,baseline] \node [anchor=base,#1](#2) {$#3$};}
+\usetheme{PaloAlto}
+
+\title{Python quantum programming languages}
+\author{John Scott, Oliver Thomas}
+\institute{Quantum Engineering CDT \\ University of Bristol}
+\date{\today}
+
+
+\begin{document}
+
+% slide 1
+\frame{\titlepage}
+
+% slide 2
+\begin{frame}
+\frametitle{Overview}
+\begin{itemize}
+    \item What is it?
+    \item Why do we care about it?
+    \item What we've been doing
+    \item Outlook
+\end{itemize}
+\end{frame}
+
+%slide 3
+\begin{frame}
+\frametitle{Motivation quantum nonlinear optics}
+\begin{columns}
+\column{0.5\textwidth}
+    \begin{block}{The good}
+    Spontaneous 
+    \begin{itemize}
+        \item thing 1 
+        \item thing 2 
+    \end{itemize}
+    i don't know
+    \begin{itemize}
+        \item thing1  
+        \item thing 2
+    \end{itemize}
+    \end{block}
+%
+\column{0.5\textwidth}
+    \begin{block}{The bad}
+        Spontaneous 
+        \begin{itemize}
+            \item i 
+            \item d
+        \end{itemize}
+        A
+        \begin{itemize}
+            \item o
+            \item n
+        \end{itemize}
+        \end{block}
+\end{columns}
+\end{frame}
+
+% slide 4
+\begin{frame}
+\frametitle{What do we mean by nonlinear optics?}
+\begin{itemize} 
+    \item Roughly processes that conserve energy but do not conserve photon number. 
+\end{itemize}
+\end{frame}
+
+%slide 5
+\begin{frame}
+\frametitle{Gaussian Optics}
+
+    \begin{itemize}
+    \item Using th
+\end{itemize}
+        \begin{equation}
+        \hat{U} = \exp[-\frac{i}{\hbar}\left( \tikzmark{P}{P} \int d\omega_1 \int d\omega_2 \tikzmark{f}{f(\omega_1,\omega_2)} \tikzmark{aa}{ \creata_s(\omega_1) \creata_i(\omega_2)} + h.c. \right) ]
+    \end{equation}
+
+    \begin{tikzpicture}[overlay, remember picture, node distance=1cm]
+    
+    \node[red] (power) [below =of P]{Power};
+    \draw[red,->,thick] (power) to [in=-90,out=45] (P);
+    
+    \node[blue,xshift=0cm] (jsa) [below =of f]{JSA};
+    \draw[blue,->,thick] (jsa) to [in=-90,out=135] (f.south);
+    
+    \node[purple] (sigidler) [below =of aa]{Signal \& Idler};
+    \draw[purple,->,thick] (sigidler) to [in=-90,out=45] (aa.south);
+\end{tikzpicture}
+\vspace{10pt} 
+\begin{itemize}
+    \item We 
+\end{itemize}
+\vspace{-10pt}
+\end{frame}
+
+% slide 6
+\begin{frame}
+    \frametitle{Types of} 
+%
+\begin{figure}[h]
+\begin{align*}
+\centering
+\vspace{-20pt}
+    \Qcircuit @C=0.6cm @R=0.1cm{
+    %1
+        &\lstick{a_1} &\qw &\multigate{1}{Squeezer} &\qw &\qw &\measureD{} \\
+    %2
+        &\lstick{a_2} &\qw &\ghost{Squeezer} &\qw  &\multigate{1}{BS} &\measureD{} \\
+    %3
+        &\lstick{a_3} &\qw &\multigate{1}{Squeezer} &\qw &\ghost{BS} &\measureD{} \\
+    %4
+        &\lstick{a_4} &\qw &\ghost{Squeezer} &\qw &\qw &\measureD{} \\
+}
+\end{align*}
+\caption{Two source HOM dip}
+\end{figure}
+%
+    \vspace{-20pt}
+% 
+\footnotetext{These are two-mode squeezers}
+%
+\end{frame}
+
+
+% slide 7 
+\begin{frame}{Schmidt decomposition}
+    \begin{itemize}
+        \item with $ \psi_k(\omega_1) $ is the k-th row and $\omega_1$-th column of $\textbf{U}_{(\omega_1, k)}$,
+        \item with $ \phi_k(\omega_2) $ is the $\omega_2$-th row and k-th column of $\textbf{V}^\dagger_{(k,\omega_2)}$
+    \end{itemize}
+\end{frame}
+
+% slide 8
+\begin{frame}
+\frametitle{Summary}
+k
+\end{frame}
+
+% slide references
+\begin{frame}{References}
+\bibliographystyle{unsrt}
+\bibliography{refs}
+\end{frame}
+\end{document}
