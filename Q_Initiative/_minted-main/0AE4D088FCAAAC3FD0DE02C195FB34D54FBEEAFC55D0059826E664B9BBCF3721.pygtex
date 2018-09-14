@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Do quantum stuff now we have our bit string}
+\PYG{n}{qvm} \PYG{o}{=} \PYG{n}{QVMConnection}\PYG{p}{()}
+\PYG{n}{qprog} \PYG{o}{=} \PYG{n}{Program}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} do X on q1, q3, q7}
+\PYG{c+c1}{\PYGZsh{} remember HZH is X}
+\PYG{n}{qprog}\PYG{o}{.}\PYG{n}{inst}\PYG{p}{(}\PYG{n}{H}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{),} \PYG{n}{Z}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{),} \PYG{n}{H}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{))}
+\PYG{n}{qprog}\PYG{o}{.}\PYG{n}{inst}\PYG{p}{(}\PYG{n}{X}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{))}
+\PYG{n}{qprog}\PYG{o}{.}\PYG{n}{inst}\PYG{p}{(}\PYG{n}{X}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{} do measurement over all 8 qubits}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{):}
+    \PYG{n}{qprog}\PYG{o}{.}\PYG{n}{measure}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{i}\PYG{p}{)}
+\end{Verbatim}

@@ -1,4 +1,14 @@
-\begin{minted}{python}
-    hello
-    print('test')
+\begin{minted}[fontsize=\tiny]{python}
+# Do quantum stuff now we have our bit string
+qvm = QVMConnection()
+qprog = Program()
+
+# do X on q1, q3, q7
+# remember HZH is X
+qprog.inst(H(1), Z(1), H(1))
+qprog.inst(X(3))
+qprog.inst(X(7))
+# do measurement over all 8 qubits
+for i in range(0, 8):
+    qprog.measure(i, i)
   \end{minted}
