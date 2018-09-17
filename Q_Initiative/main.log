@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.7)  14 SEP 2018 15:49
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.1)  14 SEP 2018 15:51
->>>>>>> 7c8e2d4023b977497a1cb0b362f89a14f705f2d5
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.1)  17 SEP 2018 10:38
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-<<<<<<< HEAD
-**\input main.tex
-(./main.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasercs.sty
-Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
-=======
 **main.tex
 (./main.tex
 LaTeX2e <2017-04-15>
@@ -22,7 +12,6 @@ Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count79
->>>>>>> 7c8e2d4023b977497a1cb0b362f89a14f705f2d5
 )
 \beamer@tempbox=\box26
 \beamer@tempcount=\count80
@@ -2430,9 +2419,10 @@ Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 )
+runsystem(uname -s > "main.w18")...executed.
 
-Package ifplatform Warning: 
-    shell escape is disabled, so I can only detect \ifwindows.
+ (./main.w18)
+runsystem(rm -- "main.w18")...executed.
 
 ) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write7
@@ -2456,49 +2446,6 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \@float@every@listing=\toks62
 \c@listing=\count365
 )
-<<<<<<< HEAD
-runsystem(mkdir -p "_minted-main")...disabled (restricted).
-
-
-
-./main.tex:45: Package minted Error: You must invoke LaTeX with the -shell-esca
-pe flag.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 \setminted
-               [python]{breaklines}
-Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
- more information.
-
-(./_minted-main/default.pygstyle)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemePaloAlt
-o.sty
-Package: beamerthemePaloAlto 2010/06/17  (rcs-revision d02a7cf4d8ae)
-
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemesi
-debar.sty
-Package: beamerouterthemesidebar 2010/06/17  (rcs-revision d02a7cf4d8ae)
-\beamer@sidebarwidth=\dimen349
-\beamer@headheight=\dimen350
-)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemero
-unded.sty
-Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemeor
-chid.sty
-Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewh
-ale.sty
-Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))
-runsystem(which "pygmentize" && touch "main.aex")...disabled (restricted).
-
-=======
 runsystem(mkdir -p _minted-main)...executed.
 
  (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
@@ -2508,22 +2455,8 @@ runsystem(mkdir -p _minted-main)...executed.
 runsystem(which pygmentize && touch main.aex)...executed.
 
 runsystem(rm main.aex)...executed.
->>>>>>> 7c8e2d4023b977497a1cb0b362f89a14f705f2d5
 
-
-./main.tex:56: Package minted Error: You must have `pygmentize' installed to us
-e this package.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \begin{document}
-                     
-Refer to the installation instructions in the minted documentation for more inf
-ormation.
-
-(./main.aux)
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -2719,37 +2652,29 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mat
 Package xypdf Info: Line width: 0.43788pt on input line 56.
  (./main.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2
-
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
 \openout6 = `main.pyg'.
 
- (./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle) (./_minted-main/0AE4D088FCAAAC3FD0DE02C195FB34D54FBEEAFC55D0059826E664B9BBCF3721.pygtex
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <6> not available
+ (./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle) (./_minted-main/530E957B0DAA0777D8F1AC460E304BFA4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 12.
-)) [3
+)) [2
+
+] [3
 
 ] [4
 
-] [5
-
-] [6
-
 ] <xymatrix 7x4 1034> <xymatrix 7x4 1034>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
- [7
-
-] [8
-
-] [9
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+ [5
 
 ] (./main.bbl
 
@@ -2759,7 +2684,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [10
+) [6
 
 ]
 \tf@nav=\write10
@@ -2771,58 +2696,29 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 \tf@snm=\write12
 \openout12 = `main.snm'.
 
-<<<<<<< HEAD
-runsystem(rm "main.pyg")...disabled (restricted).
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
-=======
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
->>>>>>> 7c8e2d4023b977497a1cb0b362f89a14f705f2d5
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 06E27B416B3B1946CD705C501CA5B3BD;45.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 35924 strings out of 493029
- 680426 string characters out of 6136235
- 827685 words of memory out of 5000000
- 38760 multiletter control sequences out of 15000+600000
- 31819 words of font info for 90 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 56i,27n,63p,10407b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (10 pages, 112570 bytes).
-=======
- 38123 strings out of 492982
- 728355 string characters out of 6134897
- 901305 words of memory out of 5000000
- 40988 multiletter control sequences out of 15000+600000
- 558919 words of font info for 100 fonts, out of 8000000 for 9000
+ 38098 strings out of 492982
+ 728014 string characters out of 6134897
+ 901148 words of memory out of 5000000
+ 40974 multiletter control sequences out of 15000+600000
+ 556341 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,27n,63p,10400b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (10 pages, 117913 bytes).
->>>>>>> 7c8e2d4023b977497a1cb0b362f89a14f705f2d5
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (6 pages, 103486 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 22 named destinations out of 1000 (max. 500000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 14 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

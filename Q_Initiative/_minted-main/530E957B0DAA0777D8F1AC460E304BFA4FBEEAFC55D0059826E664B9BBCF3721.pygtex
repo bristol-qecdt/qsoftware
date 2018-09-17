@@ -1,5 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{\PYGZsh{} Do quantum stuff now we have our bit string}
+\PYG{c+c1}{\PYGZsh{} Do quantum stuff}
 \PYG{n}{qvm} \PYG{o}{=} \PYG{n}{QVMConnection}\PYG{p}{()}
 \PYG{n}{qprog} \PYG{o}{=} \PYG{n}{Program}\PYG{p}{()}
 

@@ -59,19 +59,20 @@
 \frame{\titlepage}
 
 % slide 2
-\begin{frame}
+\begin{frame}[fragile]
 \frametitle{Overview}
+\begin{minipage}{0.52\textwidth}
 \begin{itemize}
-    \item We'll focus on Python based quantum programming libraries
+    \item Python based quantum programming libraries
     \item We tried to program the common programs (e.g. Grover's algorithm, Shor's algorithm, etc.)
     \item We tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
-    \item We've written a programming guide -- it's under an internal review
+    \item We've written a programming guide - under an internal review
 \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-    \begin{minted}[fontsize=\tiny]{python}
-# Do quantum stuff now we have our bit string 
+\end{minipage} \hfill
+%
+\begin{minipage}{0.44\textwidth}
+ \begin{minted}[fontsize=\small]{python}
+# Do quantum stuff  
 qvm = QVMConnection() 
 qprog = Program() 
 
@@ -84,6 +85,7 @@ qprog.inst(X(7))
 for i in range(0, 8): 
     qprog.measure(i, i) 
   \end{minted}
+  \end{minipage}
 \end{frame}
 
 %slide 3
@@ -118,7 +120,7 @@ for i in range(0, 8):
 \begin{frame}
 \frametitle{Long term programming languages}
 \begin{itemize} 
-    \item Roughly processes that conserve energy but do not conserve photon number. 
+    \item Don't see Python being the long term quantum language 
 \end{itemize}
 \end{frame}
 

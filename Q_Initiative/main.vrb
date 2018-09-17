@@ -1,5 +1,16 @@
-\begin{minted}[fontsize=\tiny]{python}
-# Do quantum stuff now we have our bit string
+\frametitle{Overview}
+\begin{minipage}{0.52\textwidth}
+\begin{itemize}
+    \item Python based quantum programming libraries
+    \item We tried to program the common programs (e.g. Grover's algorithm, Shor's algorithm, etc.)
+    \item We tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
+    \item We've written a programming guide - under an internal review
+\end{itemize}
+\end{minipage} \hfill
+%
+\begin{minipage}{0.44\textwidth}
+ \begin{minted}[fontsize=\small]{python}
+# Do quantum stuff
 qvm = QVMConnection()
 qprog = Program()
 
@@ -12,3 +23,4 @@ qprog.inst(X(7))
 for i in range(0, 8):
     qprog.measure(i, i)
   \end{minted}
+  \end{minipage}
