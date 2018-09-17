@@ -1,3 +1,10 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{mckay2018qiskit}
+David~C McKay, Thomas Alexander, Luciano Bello, Michael~J Biercuk, Lev Bishop,
+  Jiayin Chen, Jerry~M Chow, Antonio~D C{\'o}rcoles, Daniel Egger, Stefan
+  Filipp, et~al.
+\newblock Qiskit backend specifications for openqasm and openpulse experiments.
+\newblock {\em arXiv preprint arXiv:1809.03452}, 2018.
 
 \end{thebibliography}

@@ -116,11 +116,22 @@ for i in range(0, 8):
         \end{block}
 \end{columns}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Cloud based quantum computing}
+    IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have
+added pulse shaping. \footnote{way to specific and the examples look incredibly confusing} 
+
+\end{frame}
 % slide 4
 \begin{frame}
 \frametitle{Long term programming languages}
 \begin{itemize} 
     \item Don't see Python being the long term quantum language 
+    \item Existing Python libraries not built to be scalable languages. Heavy focus on
+        quantum circuits \footnote{I don't think thinking in terms of quantum circuits is
+        useful for new algorithms}
+    \item Need a quantum instruction set that isn't just listing gates
 \end{itemize}
 \end{frame}
 
