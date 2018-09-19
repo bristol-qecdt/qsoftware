@@ -2,8 +2,8 @@
 \begin{minipage}{0.52\textwidth}
 \begin{itemize}
     \item Python based quantum programming libraries
-    \item We tried to program the common programs (e.g. Grover's algorithm, Shor's algorithm, etc.)
-    \item We tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
+    \item Tried programming the common programs (e.g. Grover's, Shor's, etc.)
+    \item Tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
     \item We've written a programming guide -- we're currently reviewing it
 \end{itemize}
 \end{minipage} \hfill
