@@ -123,44 +123,59 @@ for i in range(0, 8):
 added pulse shaping. \footnote{way to specific and the examples look incredibly confusing} 
 
 \end{frame}
+
+% Structure of quantum computers
+\begin{frame}{Structure of classical computers}
+%%   \begin{minipage}{0.52\textwidth}
+%% }
+%%   \end{minipage} \hfill
+%%   %
+%%   \begin{minipage}{0.44\textwidth}
+    
+%%   \end{minipage}
+  \includegraphics[width=0.6\textwidth]{Harvard_architecture.png}
+  \hfill
+  \includegraphics[width=0.3\textwidth]{micro.jpg}
+  \begin{itemize}
+  \item Classical computers have a lot of internal structure -- they are not just a collection of addressable bits.
+  \item Classical computers are controlled using an instruction set, which has elementary operations for arithmetic, control, moving data around, etc.
+  \end{itemize}
+\end{frame}
+
+% Structure of quantum computers
+\begin{frame}{Structure of classical computers}
+%%   \begin{minipage}{0.52\textwidth}
+%% }
+%%   \end{minipage} \hfill
+%%   %
+%%   \begin{minipage}{0.44\textwidth}
+    
+%%   \end{minipage}
+  \includegraphics[width=0.5\textwidth]{nearestneighbourcon.png}
+  \hfill
+  \includegraphics[width=0.35\textwidth]{qproc.jpg}
+  \begin{itemize}
+  \item Quantum processing units (QPUs) currently comprise a lattice of qubits which can be manipulated and measured.
+  \item The only `instructions' which can be performed are qubit initialisation, gate operations, and measurement
+  \item Will QPUs eventually involve higher level structures like in the classical case? This will determine the type of languages that will control the devices
+  \end{itemize}
+\end{frame}
+
+
 % slide 4
 \begin{frame}
 \frametitle{Long term programming languages}
-\begin{itemize} 
-    \item Don't see Python being the long term quantum language 
-    \item Existing Python libraries not built to be scalable languages. Heavy focus on
-        quantum circuits \footnote{I don't think thinking in terms of quantum circuits is
-        useful for new algorithms}
-    \item Need a quantum instruction set that isn't just listing gates
+\begin{itemize}
+\item The structure of long term languages depends on the structure of long term quantum computers
+\item Don't see Python being the long term quantum language 
+\item Existing Python libraries not built to be scalable languages. Heavy focus on quantum circuits \footnote{I don't think thinking in terms of quantum circuits is useful for new algorithms}
+\item Need a quantum instruction set that isn't just listing gates
 \end{itemize}
 \end{frame}
 
-% slide 6
-\begin{frame}
-    \frametitle{Types of} 
-%
-\begin{figure}[h]
-\begin{align*}
-\centering
-\vspace{-20pt}
-    \Qcircuit @C=0.6cm @R=0.1cm{
-    %1
-        &\lstick{a_1} &\qw &\multigate{1}{Squeezer} &\qw &\qw &\measureD{} \\
-    %2
-        &\lstick{a_2} &\qw &\ghost{Squeezer} &\qw  &\multigate{1}{BS} &\measureD{} \\
-    %3
-        &\lstick{a_3} &\qw &\multigate{1}{Squeezer} &\qw &\ghost{BS} &\measureD{} \\
-    %4
-        &\lstick{a_4} &\qw &\ghost{Squeezer} &\qw &\qw &\measureD{} \\
-}
-\end{align*}
-\caption{Two source HOM dip}
-\end{figure}
-%
-    \vspace{-20pt}
-% 
-\footnotetext{These are two-mode squeezers}
-%
+% slide qpu vs micro
+\begin{frame}{The}
+
 \end{frame}
 
 % slide references
