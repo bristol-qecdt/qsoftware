@@ -47,7 +47,7 @@
 
 \usetheme{PaloAlto}
 
-\title{Python quantum programming languages}
+\title{Python based quantum programming languages}
 \author{John Scott, Oliver Thomas}
 \institute{Quantum Engineering CDT \\ University of Bristol}
 \date{\today}
@@ -64,8 +64,8 @@
 \begin{minipage}{0.52\textwidth}
 \begin{itemize}
     \item We looked at python based quantum programming libraries.
-    \item Tried writing the common programs (e.g. Grover's, Shor's, etc.)
-    \item Tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
+    \item Tried writing the common programs (Grover's, Shor's, etc.)
+    \item Tried compiling a simple program for different hardware platforms (gate restrictions, etc.)
     \item We've written a programming guide -- we're currently reviewing it.
 \end{itemize}
 \end{minipage} \hfill
@@ -145,7 +145,8 @@ for i in range(0, 8):
   \includegraphics[width=0.35\textwidth]{qproc.jpg} \cite{supercondpic}
   \begin{itemize}
   \item Quantum processing units (QPUs) currently comprise a lattice of qubits which can be manipulated and measured.
-  \item The only `instructions' which can be performed are qubit initialisation, gate operations, and measurement
+  \item The only `instructions' which can be performed are qubit initialisation, gate
+      operations, and measurement.
   \item Will QPUs eventually involve higher level structures like in the classical case? This will determine the type of languages that will control the devices.
   \end{itemize}
 \end{frame}
@@ -154,7 +155,8 @@ for i in range(0, 8):
 \begin{frame}
 \frametitle{Conclusion: long term programming languages}
 \begin{itemize}
-\item The structure of long term languages depends on the structure of long term quantum computers
+\item The structure of long term languages depends on the structure of long term quantum
+    computers.
 \item We need a quantum instruction set that isn't just listing gates. We want to see \textbf{coherent addition}, \textbf{multiplication}, \textbf{exponentiation}, etc. Possible also \textbf{coherent branching}?
 \item Don't see Python being the long term quantum language -- there's no need to wrap assembly language in high level syntax. 
 \item Existing Python libraries not built to be scalable languages. Heavy focus on quantum circuits, not useful for new algorithms.
