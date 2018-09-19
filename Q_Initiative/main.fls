@@ -532,6 +532,7 @@ INPUT ./qproc.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT main.bbl
 INPUT main.bbl
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm

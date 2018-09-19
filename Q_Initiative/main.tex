@@ -120,7 +120,7 @@ for i in range(0, 8):
 \begin{frame}
   \frametitle{Cloud based quantum computing}
   \begin{itemize}
-  \item The superconducting qubit developers (IBM, Rigetti, Google, etc.) have made their hardware accessible through the cloud. 
+      \item The superconducting qubit developers (IBM \cite{ibmqiskit}, Rigetti \cite{rigetti}, Google \cite{googlecirq}, etc.) have made their hardware accessible through the cloud. 
   \item They've released software written in Python for use on their simulators and hardware.
     \item We found the connection to some cloud services would time out for moderate sized quantum circuits.
 %  \item IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have added pulse shaping. \footnote{Aimed at physicists}
@@ -131,7 +131,7 @@ for i in range(0, 8):
 \begin{frame}{Long term: comparison with classical computers}
   \includegraphics[width=0.6\textwidth]{Harvard_architecture.png}
   \hfill
-  \includegraphics[width=0.3\textwidth]{micro.jpg}
+  \includegraphics[width=0.3\textwidth]{micro.jpg} \cite{armchip}
   \begin{itemize}
   \item Classical computers have a lot of internal structure -- they are not just a collection of addressable bits.
   \item Classical computers are controlled using an instruction set, which has elementary operations for arithmetic, control, moving data around, etc.
@@ -142,7 +142,7 @@ for i in range(0, 8):
 \begin{frame}{Long term: comparison with classical computers}
   \includegraphics[width=0.5\textwidth]{nearestneighbourcon.png}
   \hfill
-  \includegraphics[width=0.35\textwidth]{qproc.jpg}
+  \includegraphics[width=0.35\textwidth]{qproc.jpg} \cite{supercondpic}
   \begin{itemize}
   \item Quantum processing units (QPUs) currently comprise a lattice of qubits which can be manipulated and measured.
   \item The only `instructions' which can be performed are qubit initialisation, gate operations, and measurement

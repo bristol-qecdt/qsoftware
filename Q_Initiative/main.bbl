@@ -1,3 +1,23 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{ibmqiskit}
+Ibm's qiskit docs.
+\newblock \url{https://github.com/Qiskit/qiskit-terra}.
+
+\bibitem{rigetti}
+Rigetti's pyquil docs.
+\newblock \url{https://pyquil.readthedocs.io/en/stable/}.
+
+\bibitem{googlecirq}
+Google's cirq docs.
+\newblock \url{https://github.com/quantumlib/Cirq}.
+
+\bibitem{armchip}
+Arm chip.
+\newblock \url{http://www.espruino.com/}.
+
+\bibitem{supercondpic}
+Superconducting chip.
+\newblock \url{http://web.physics.ucsb.edu/~martinisgroup/}.
 
 \end{thebibliography}
