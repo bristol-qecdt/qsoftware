@@ -12,15 +12,13 @@
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\slideentry {0}{0}{7}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {0}{0}{8}{8/8}{}{0}}
+\headcommand {\sectionentry {1}{\translate {References}}{8}{\translate {References}}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\headcommand {\beamer@subsectionpages {1}{7}}
+\headcommand {\slideentry {1}{0}{0}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\sectionentry {1}{\translate {References}}{9}{\translate {References}}{0}}
-\headcommand {\beamer@sectionpages {1}{8}}
+\headcommand {\beamer@partpages {1}{8}}
 \headcommand {\beamer@subsectionpages {1}{8}}
-\headcommand {\slideentry {1}{0}{0}{9/9}{}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@partpages {1}{9}}
-\headcommand {\beamer@subsectionpages {1}{9}}
-\headcommand {\beamer@sectionpages {1}{9}}
-\headcommand {\beamer@documentpages {9}}
-\headcommand {\def \inserttotalframenumber {9}}
+\headcommand {\beamer@sectionpages {1}{8}}
+\headcommand {\beamer@documentpages {8}}
+\headcommand {\def \inserttotalframenumber {8}}

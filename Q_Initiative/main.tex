@@ -66,7 +66,7 @@
     \item Python based quantum programming libraries
     \item We tried to program the common programs (e.g. Grover's algorithm, Shor's algorithm, etc.)
     \item We tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
-    \item We've written a programming guide - under an internal review
+    \item We've written a programming guide -- we're currently reviewing it
 \end{itemize}
 \end{minipage} \hfill
 %
@@ -118,10 +118,13 @@ for i in range(0, 8):
 \end{frame}
 
 \begin{frame}
-    \frametitle{Cloud based quantum computing}
-    IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have
-added pulse shaping. \footnote{way to specific and the examples look incredibly confusing} 
-
+  \frametitle{Cloud based quantum computing}
+  \begin{itemize}
+  \item The superconducting qubit developers (IBM, etc.) have made their hardware accessible through the cloud. Part of the purpose of the python programming languages is to connect with this hardware.
+    \item pyQuil has a cloud based simulator, but the connection times out if you try to send large quantum circuits.
+  \item IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have
+    added pulse shaping. \footnote{way too specific and the examples look incredibly confusing}
+  \end{itemize}
 \end{frame}
 
 % Structure of quantum computers
@@ -149,18 +152,13 @@ added pulse shaping. \footnote{way to specific and the examples look incredibly 
 
 % slide 4
 \begin{frame}
-\frametitle{Long term programming languages}
+\frametitle{Conclusion: long term programming languages}
 \begin{itemize}
 \item The structure of long term languages depends on the structure of long term quantum computers
-\item Don't see Python being the long term quantum language 
-\item Existing Python libraries not built to be scalable languages. Heavy focus on quantum circuits \footnote{I don't think thinking in terms of quantum circuits is useful for new algorithms}
-\item Need a quantum instruction set that isn't just listing gates
+\item We need a quantum instruction set that isn't just listing gates. We want to see coherent \textbf{addition}, \textbf{multiplication}, \textbf{exponentiation}, etc. Possible also coherent \textbf{branching}?
+\item Don't see Python being the long term quantum language -- there's no need to wrap assembly language in high level syntax. 
+\item Existing Python libraries not built to be scalable languages. Heavy focus on quantum circuits, not useful for new algorithms.
 \end{itemize}
-\end{frame}
-
-% slide qpu vs micro
-\begin{frame}{The}
-
 \end{frame}
 
 % slide references
