@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.17)  19 SEP 2018 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.17)  19 SEP 2018 16:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2667,36 +2667,31 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 
 ] [3
 
-]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
- [4
+] [4
 
 ]
-<Harvard_architecture.png, id=152, 708.39656pt x 377.15906pt>
+<Harvard_architecture.png, id=149, 708.39656pt x 377.15906pt>
 File: Harvard_architecture.png Graphic file (type png)
 <use Harvard_architecture.png>
-Package pdftex.def Info: Harvard_architecture.png  used on input line 139.
+Package pdftex.def Info: Harvard_architecture.png  used on input line 141.
 (pdftex.def)             Requested size: 174.44734pt x 92.87381pt.
-<micro.jpg, id=154, 351.3125pt x 351.3125pt>
+<micro.jpg, id=151, 351.3125pt x 351.3125pt>
 File: micro.jpg Graphic file (type jpg)
 <use micro.jpg>
-Package pdftex.def Info: micro.jpg  used on input line 139.
+Package pdftex.def Info: micro.jpg  used on input line 141.
 (pdftex.def)             Requested size: 87.22366pt x 87.22215pt.
  [5
 
  <./Harvard_architecture.png> <./micro.jpg>]
-<nearestneighbourcon.png, id=183, 287.474pt x 126.874pt>
+<nearestneighbourcon.png, id=180, 287.474pt x 126.874pt>
 File: nearestneighbourcon.png Graphic file (type png)
 <use nearestneighbourcon.png>
-Package pdftex.def Info: nearestneighbourcon.png  used on input line 151.
+Package pdftex.def Info: nearestneighbourcon.png  used on input line 153.
 (pdftex.def)             Requested size: 145.3713pt x 64.15892pt.
-<qproc.jpg, id=184, 1561.032pt x 1040.688pt>
+<qproc.jpg, id=181, 1561.032pt x 1040.688pt>
 File: qproc.jpg Graphic file (type jpg)
 <use qproc.jpg>
-Package pdftex.def Info: qproc.jpg  used on input line 151.
+Package pdftex.def Info: qproc.jpg  used on input line 153.
 (pdftex.def)             Requested size: 101.76169pt x 67.83765pt.
  [6
 
@@ -2706,6 +2701,9 @@ Package pdftex.def Info: qproc.jpg  used on input line 151.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\translate ' on input line 1.
+
+
+Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 ) [8
 
@@ -2719,29 +2717,29 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@snm=\write12
 \openout12 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 06E27B416B3B1946CD705C501CA5B3BD;45.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 38025 strings out of 492982
- 727514 string characters out of 6134896
- 894775 words of memory out of 5000000
- 40888 multiletter control sequences out of 15000+600000
- 556991 words of font info for 97 fonts, out of 8000000 for 9000
+ 37976 strings out of 492982
+ 726532 string characters out of 6134896
+ 894760 words of memory out of 5000000
+ 40842 multiletter control sequences out of 15000+600000
+ 550341 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,63p,10400b,937s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (8 pages, 11697339 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (8 pages, 11678067 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 19 named destinations out of 1000 (max. 500000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 18 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -120,10 +120,12 @@ for i in range(0, 8):
 \begin{frame}
   \frametitle{Cloud based quantum computing}
   \begin{itemize}
-  \item The superconducting qubit developers (IBM, etc.) have made their hardware accessible through the cloud. Part of the purpose of the python programming languages is to connect with this hardware.
-    \item pyQuil has a cloud based simulator, but the connection times out if you try to send large quantum circuits.
-  \item IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have
-    added pulse shaping. \footnote{Aimed at physicists}
+  \item The superconducting qubit developers (IBM, Rigetti, Google, etc.) have made their
+      hardware accessible through the cloud. 
+  \item Released software written in Python for use on their simulators and hardware.
+    \item We found the connection would time out for
+        moderate sized quantum circuits.
+%  \item IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have added pulse shaping. \footnote{Aimed at physicists}
   \end{itemize}
 \end{frame}
 
