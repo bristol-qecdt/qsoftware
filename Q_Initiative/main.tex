@@ -63,10 +63,10 @@
 \frametitle{Overview}
 \begin{minipage}{0.52\textwidth}
 \begin{itemize}
-    \item Python based quantum programming libraries
-    \item We tried to program the common programs (e.g. Grover's algorithm, Shor's algorithm, etc.)
-    \item We tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
-    \item We've written a programming guide -- we're currently reviewing it
+    \item We looked at python based quantum programming libraries.
+    \item Tried writing the common programs (e.g. Grover's, Shor's, etc.)
+    \item Tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
+    \item We've written a programming guide -- we're currently reviewing it.
 \end{itemize}
 \end{minipage} \hfill
 %
@@ -95,23 +95,23 @@ for i in range(0, 8):
 \column{0.46\textwidth}
     \begin{block}{What is there}
     \begin{itemize}
-        \item Focussed on quantum circuits
-        \item Apply gates to specific qubits
-        \item Classical control in the same source code
-        \item Python syntax is beginner friendly
-        \item Simulators are available
-        \item Hardware compilers are available
+        \item Focused on the quantum circuit model.
+        \item You can apply gates to specific qubits.
+        \item Classical control in the same source code.
+        \item Python syntax is beginner friendly.
+        \item Simulators are available.
+        \item Hardware compilers are available.
     \end{itemize}
     \end{block}
     %
 \column{0.5\textwidth}
     \begin{block}{What is lacking}
         \begin{itemize}
-            \item Lack of support for custom unitaries
-            \item Compilers are not highly developed
-            \item Some languages target specific hardware
-            \item Some simulators are cloud based and require accounts
-            \item No real quantum programming contructs (e.g. quantum if etc.)
+            \item Some languages target specific hardware.
+            \item Some simulators are cloud based and need accounts.
+            \item Lack of support for custom unitaries.
+            \item Compilers are not highly developed.
+            \item No real quantum programming constructs (e.g. quantum if etc.)
         \end{itemize}
         \end{block}
 \end{columns}
@@ -120,18 +120,18 @@ for i in range(0, 8):
 \begin{frame}
   \frametitle{Cloud based quantum computing}
   \begin{itemize}
-  \item The superconducting qubit developers (IBM, etc.) have made their hardware accessible through the cloud. Part of the purpose of the python programming languages is to connect with this hardware.
-    \item pyQuil has a cloud based simulator, but the connection times out if you try to send large quantum circuits.
-  \item IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have
-    added pulse shaping. \footnote{way too specific and the examples look incredibly confusing}
+      \item The superconducting qubit developers (IBM \cite{ibmqiskit}, Rigetti \cite{rigetti}, Google \cite{googlecirq}, etc.) have made their hardware accessible through the cloud. 
+  \item They've released software written in Python for use on their simulators and hardware.
+    \item We found the connection to some cloud services would time out for moderate sized quantum circuits.
+%  \item IBM recently introduced their new API \cite{mckay2018qiskit} which uses JSON files to control runs. They have added pulse shaping. \footnote{Aimed at physicists}
   \end{itemize}
 \end{frame}
 
 % Structure of quantum computers
-\begin{frame}{Structure of classical computers}
+\begin{frame}{Long term: comparison with classical computers}
   \includegraphics[width=0.6\textwidth]{Harvard_architecture.png}
   \hfill
-  \includegraphics[width=0.3\textwidth]{micro.jpg}
+  \includegraphics[width=0.3\textwidth]{micro.jpg} \cite{armchip}
   \begin{itemize}
   \item Classical computers have a lot of internal structure -- they are not just a collection of addressable bits.
   \item Classical computers are controlled using an instruction set, which has elementary operations for arithmetic, control, moving data around, etc.
@@ -139,14 +139,14 @@ for i in range(0, 8):
 \end{frame}
 
 % Structure of quantum computers
-\begin{frame}{Structure of quantum computers}
+\begin{frame}{Long term: comparison with classical computers}
   \includegraphics[width=0.5\textwidth]{nearestneighbourcon.png}
   \hfill
-  \includegraphics[width=0.35\textwidth]{qproc.jpg}
+  \includegraphics[width=0.35\textwidth]{qproc.jpg} \cite{supercondpic}
   \begin{itemize}
   \item Quantum processing units (QPUs) currently comprise a lattice of qubits which can be manipulated and measured.
   \item The only `instructions' which can be performed are qubit initialisation, gate operations, and measurement
-  \item Will QPUs eventually involve higher level structures like in the classical case? This will determine the type of languages that will control the devices
+  \item Will QPUs eventually involve higher level structures like in the classical case? This will determine the type of languages that will control the devices.
   \end{itemize}
 \end{frame}
 
@@ -155,7 +155,7 @@ for i in range(0, 8):
 \frametitle{Conclusion: long term programming languages}
 \begin{itemize}
 \item The structure of long term languages depends on the structure of long term quantum computers
-\item We need a quantum instruction set that isn't just listing gates. We want to see coherent \textbf{addition}, \textbf{multiplication}, \textbf{exponentiation}, etc. Possible also coherent \textbf{branching}?
+\item We need a quantum instruction set that isn't just listing gates. We want to see \textbf{coherent addition}, \textbf{multiplication}, \textbf{exponentiation}, etc. Possible also \textbf{coherent branching}?
 \item Don't see Python being the long term quantum language -- there's no need to wrap assembly language in high level syntax. 
 \item Existing Python libraries not built to be scalable languages. Heavy focus on quantum circuits, not useful for new algorithms.
 \end{itemize}
