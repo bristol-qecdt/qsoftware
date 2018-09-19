@@ -1,10 +1,10 @@
 \frametitle{Overview}
 \begin{minipage}{0.52\textwidth}
 \begin{itemize}
-    \item Python based quantum programming libraries
-    \item Tried programming the common programs (e.g. Grover's, Shor's, etc.)
+    \item We looked at python based quantum programming libraries.
+    \item Tried writing the common programs (e.g. Grover's, Shor's, etc.)
     \item Tried compiling a simple program for different hardware platforms (i.e. with gate restrictions, etc.)
-    \item We've written a programming guide -- we're currently reviewing it
+    \item We've written a programming guide -- we're currently reviewing it.
 \end{itemize}
 \end{minipage} \hfill
 %
